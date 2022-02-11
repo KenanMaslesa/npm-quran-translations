@@ -1,0 +1,16 @@
+{
+  "name": "@kmaslesa/quran-translation-bs_korkut",
+  "version": "1.0.1",
+  "description": "Qur'an translation",
+  "main": "index.js",
+  "keywords": [
+    "quran",
+    "quran translation",
+    "kur'an",
+    "prevod kur'ana",
+    "islam",
+    "muslim"
+  ],
+  "author": "Kenan Maslesa",
+  "license": "ISC"
+}
