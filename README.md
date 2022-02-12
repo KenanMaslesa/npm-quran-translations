@@ -12,7 +12,7 @@ const quranTranslation = require('@kmaslesa/quran-translation-bs_korkut');
 ```
 
 ```typescript
-quranTranslations.getHolyQuranTranslation();
+quranTranslation.getHolyQuranTranslation();
 
 RESPONSE:
 [
@@ -89,30 +89,30 @@ RESPONSE:
 ```
 
 ```typescript
-quranTranslations.getIndexTranslation(index); // index=(1-6236)
+quranTranslation.getIndexTranslation(index); // index=(1-6236)
 
 EXAMPLE:
-quranTranslations.getIndexTranslation(1);
+quranTranslation.getIndexTranslation(1);
 
 RESPONSE:
 [{"index":"1","sura":"1","aya":"1","text":"'U ime Allaha, Milostivog, Samilosnog!'"}]
 ```
 
 ```typescript
-quranTranslations.getSuraTranslation(sura); // sura=(1-114)
+quranTranslation.getSuraTranslation(sura); // sura=(1-114)
 
 EXAMPLE:
-quranTranslations.getSuraTranslation(114);
+quranTranslation.getSuraTranslation(114);
 
 RESPONSE:
 [{"index":"6231","sura":"114","aya":"1","text":"'Reci: \"Tražim zaštitu Gospodara ljudi,'"},{"index":"6232","sura":"114","aya":"2","text":"'Vladara ljudi,'"},{"index":"6233","sura":"114","aya":"3","text":"'Boga ljudi,'"},{"index":"6234","sura":"114","aya":"4","text":"'od zla šejtana-napasnika,'"},{"index":"6235","sura":"114","aya":"5","text":"'koji zle misli unosi u srca ljudi –'"},{"index":"6236","sura":"114","aya":"6","text":"'od džina i od ljudi!\"'"}]
 ```
 
 ```typescript
-quranTranslations.getAyaTranslation(aya, sura);
+quranTranslation.getAyaTranslation(aya, sura);
 
 EXAMPLE:
-quranTranslations.getAyaTranslation(1, 114);
+quranTranslation.getAyaTranslation(1, 114);
 
 RESPONSE:
 [{"index":"6231","sura":"114","aya":"1","text":"'Reci: \"Tražim zaštitu Gospodara ljudi,'"}]
