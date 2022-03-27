@@ -3,12 +3,12 @@
 ## Installation
 
 ```bash
-npm install @quran-translation/bosnian_korkut
+npm install @kmaslesa/quran_translation-bosnian_korkut
 ```
 
 ## Usage
 ```typescript
-const quranTranslation = require('@quran-translation/bosnian_korkut');
+const quranTranslation = require('@kmaslesa/quran_translation-bosnian_korkut');
 ```
 
 ```typescript

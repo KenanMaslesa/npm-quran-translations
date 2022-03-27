@@ -1,5 +1,5 @@
 {
-  "name": "@quran-translation/bosnian_korkut",
+  "name": "@kmaslesa/quran_translation-bosnian_korkut",
   "version": "1.0.0",
   "description": "Qur'an translation",
   "main": "index.js",
