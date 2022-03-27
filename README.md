@@ -3,12 +3,12 @@
 ## Installation
 
 ```bash
-npm install @kmaslesa/quran-translation-bs_korkut
+npm install @quran-translation/bosnian_korkut
 ```
 
 ## Usage
 ```typescript
-const quranTranslation = require('@kmaslesa/quran-translation-bs_korkut');
+const quranTranslation = require('@quran-translation/bosnian_korkut');
 ```
 
 ```typescript
@@ -16,109 +16,66 @@ quranTranslation.getHolyQuranTranslation();
 
 RESPONSE:
 [
-  {
-    index: "1",
-    sura: "1",
-    aya: "1",
-    text: "'U ime Allaha, Milostivog, Samilosnog!'",
-  },
-  {
-    index: "2",
-    sura: "1",
-    aya: "2",
-    text: "'Tebe, Allaha, Gospodara svjetova, hvalimo,'",
-  },
-  {
-    index: "3",
-    sura: "1",
-    aya: "3",
-    text: "'Milostivog, Samilosnog,'",
-  },
-  { index: "4", sura: "1", aya: "4", text: "'Vladara Dana sudnjeg,'" },
-  {
-    index: "5",
-    sura: "1",
-    aya: "5",
-    text: "'Tebi se klanjamo i od Tebe pomoć tražimo!'",
-  },
-  {
-    index: "6",
-    sura: "1",
-    aya: "6",
-    text: "'Uputi nas na Pravi put,'",
-  },
-  {
-    index: "7",
-    sura: "1",
-    aya: "7",
-    text: "'na Put onih kojima si milost Svoju darovao, a ne onih koji su protiv sebe srdžbu izazvali, niti onih koji su zalutali!'",
-  },
-  { index: "8", sura: "2", aya: "1", text: "'Elif Lām Mīm.'" },
-  {
-    index: "9",
-    sura: "2",
-    aya: "2",
-    text: "'Ova Knjiga, u koju nema nikakve sumnje, uputstvo je svima onima koji se budu Allaha bojali;'",
-  },
-  {
-    index: "10",
-    sura: "2",
-    aya: "3",
-    text: "'onima koji u nevidljivi svijet budu vjerovali i molitvu obavljali i udjeljivali dio od onoga što im Mi budemo davali;'",
-  },
-  {
-    index: "11",
-    sura: "2",
-    aya: "4",
-    text: "'i onima koji budu vjerovali u ono što se objavljuje tebi i u ono što je objavljeno prije tebe, i onima koji u onaj svijet budu čvrsto vjerovali.'",
-  },
-  {
-    index: "12",
-    sura: "2",
-    aya: "5",
-    text: "'Njima će Gospodar njihov na Pravi put ukazati i oni će ono što žele ostvariti.'",
-  },
-  {
-    index: "13",
-    sura: "2",
-    aya: "6",
-    text: "'Onima koji neće da vjeruju doista je svejedno – opominjao ih ti ili ne opominjao – oni neće vjerovati.'",
-  }
+	{
+		"index":1,
+		"sura":1,
+		"ayaNumber":1,
+		"aya":"بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+		"juz":1,
+		"hizb":1,
+		"page":1,
+		"translation":"U ime Allaha, Milostivog, Samilosnog!"
+	},
+	{
+		"index":2,
+		"sura":1,
+		"ayaNumber":2,
+		"aya":"ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ",
+		"juz":1,
+		"hizb":1,
+		"page":1,
+		"translation":"Tebe, Allaha, Gospodara svjetova, hvalimo,"
+	},
+	{
+		"index":3,
+		"sura":1,
+		"ayaNumber":3,
+		"aya":"ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+		"juz":1,
+		"hizb":1,
+		"page":1,
+		"translation":"Milostivog, Samilosnog,"
+	}
   ..........
+]
 ]
 ```
 
+
 ```typescript
-quranTranslation.getIndexTranslation(index); // index=(1-6236)
-
-EXAMPLE:
-quranTranslation.getIndexTranslation(1);
-
-RESPONSE:
-[{"index":"1","sura":"1","aya":"1","text":"'U ime Allaha, Milostivog, Samilosnog!'"}]
+quranTranslation.getTranslationByJuz(juz); // juz=(1-30)
 ```
 
 ```typescript
-quranTranslation.getSuraTranslation(sura); // sura=(1-114)
-
-EXAMPLE:
-quranTranslation.getSuraTranslation(114);
-
-RESPONSE:
-[{"index":"6231","sura":"114","aya":"1","text":"'Reci: \"Tražim zaštitu Gospodara ljudi,'"},{"index":"6232","sura":"114","aya":"2","text":"'Vladara ljudi,'"},{"index":"6233","sura":"114","aya":"3","text":"'Boga ljudi,'"},{"index":"6234","sura":"114","aya":"4","text":"'od zla šejtana-napasnika,'"},{"index":"6235","sura":"114","aya":"5","text":"'koji zle misli unosi u srca ljudi –'"},{"index":"6236","sura":"114","aya":"6","text":"'od džina i od ljudi!\"'"}]
+quranTranslation.getTranslationByHizb(hizb); // juz=(1-60)
 ```
 
 ```typescript
-quranTranslation.getAyaTranslation(aya, sura);
-
-EXAMPLE:
-quranTranslation.getAyaTranslation(1, 114);
-
-RESPONSE:
-[{"index":"6231","sura":"114","aya":"1","text":"'Reci: \"Tražim zaštitu Gospodara ljudi,'"}]
-
+quranTranslation.getTranslationByPage(page); // page=(1-604)
 ```
 
+```typescript
+quranTranslation.getTranslationBySura(sura); // sura=(1-114)
+```
+
+```typescript
+quranTranslation.getTranslationByIndex(index); // index=(1-6236)
+```
+
+```typescript
+quranTranslation.getTranslationByAyah(aya, sura);
+
+```
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
